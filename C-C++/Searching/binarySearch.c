@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 int item, size;
+
 void readArray(int array[])
 {
     int i;

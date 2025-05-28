@@ -7,7 +7,6 @@ struct PolyAddition
 
 int read(PolyAddition p[])
 {
-
     int t1;
     std::cout << "Enter the max count";
     std::cin >> t1;

@@ -1,6 +1,9 @@
 #include <stdio.h>
+
 #define MAX 5
+
 int Stack[MAX], top = -1;
+
 void push()
 {
     int data;

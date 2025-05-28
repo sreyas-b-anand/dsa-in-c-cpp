@@ -1,5 +1,4 @@
 // By using structerd array
-
 #include <stdio.h>
 #define MAX 5
 int FRONT = -1, REAR = -1;

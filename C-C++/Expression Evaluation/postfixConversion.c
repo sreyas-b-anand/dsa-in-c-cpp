@@ -79,9 +79,11 @@ void convert(){
             pop();
             i++;
         }else{
+
             while(!isEmpty() && precedence(expression[i]) <= precedence(peek())){
                 postfix[j++] = pop();
             }
+            
             push(expression[i++]);
         }
     }

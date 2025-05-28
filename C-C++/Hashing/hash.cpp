@@ -10,6 +10,7 @@ int main(){
     for(int a : ar){
         hashmap.insert({r++ , a});
     }
+    
     for(auto hash : hashmap){
         std::cout<<hash.first << " " << hash.second <<"\n";
     }

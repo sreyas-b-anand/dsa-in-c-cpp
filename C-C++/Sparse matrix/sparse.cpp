@@ -48,7 +48,6 @@ void display(int a[][20], int r)
         std::cout << " ";
     }
 }
-
 int main()
 {
     int arr[20][20] , b[20][20];

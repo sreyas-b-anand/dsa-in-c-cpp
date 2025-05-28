@@ -20,7 +20,6 @@ void heapify(int a[], int index, int n)
         a[largest] = temp;
         heapify(a, largest, n);
     }
-    
 }
 void maxHeap(int a[], int size)
 {
