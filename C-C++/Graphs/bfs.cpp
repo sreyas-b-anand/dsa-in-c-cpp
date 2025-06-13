@@ -1,35 +1,31 @@
-// bfs implementation
 #include <iostream>
 
 #include <queue>
 int main(){
     std::queue<int> q;
-    //bfs
-
-    int u  , i = 0;
     int visited[7] = {0,0,0,0,0,0,0};
 
     int g[7][7] ={
         {0,1,1,1,0,0,0},
         {1,0,1,1,0,0,0},
         {1,1,0,1,1,0,0},
-        {1,0,1,0,1,0,0},
+        {1,0,0,0,1,0,0},
         {0,0,1,1,0,1,1},
         {0,0,0,0,1,0,0},
-        {0,0,0,0,1,0,0},
+        {0,0,0,0,1,0,1},
     } ;
 
-    std::cout<<"i "<<i<<"\n";
-    visited[i] = 1;
-    q.push(i);// push i for exploration
+    std::cout<<"i : "<<0<<" ";
+    q.push(0);
+    visited[0] = 1;
     while(!q.empty()){
         int node = q.front();
         q.pop();
-        for (int j = 0; j < 7;j++){
-            if(g[node][j]  == 1 && visited[j]==0){
-                std::cout<<"i " << j <<"\n";
-                visited[j] = 1;
-                q.push(j); 
+        for(int i = 0 ; i < 7 ; i++){
+            if((g[node][i] == 1) && (visited[i] == 0)){
+                q.push(i);
+                visited[i] = 1;
+                std::cout<<i<<" ";
             }
         }
     }

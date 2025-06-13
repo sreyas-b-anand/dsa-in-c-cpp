@@ -14,4 +14,5 @@ int main(){
     for(auto hash : hashmap){
         std::cout<<hash.first << " " << hash.second <<"\n";
     }
+    std::cout << hashmap.size();
 }
