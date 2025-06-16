@@ -19,7 +19,7 @@ void unionSet(int x, int y)
     int rootX = find(x);
     int rootY = find(y);
     if (rootX == rootY)
-        std::cout<<"There is a cycle";
+        std::cout<<"There is a cycle "<<rootX <<" "<<rootY;
     if (rank[rootX] < rank[rootY])
     {
         parent[rootX] = rootY;
